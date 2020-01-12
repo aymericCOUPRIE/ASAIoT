@@ -1,5 +1,7 @@
 import time
 import grovepi
+import sendData
+
 # Connect the Grove Switch to digital port D3
 # SIG,NC,VCC,GND
 
@@ -14,8 +16,9 @@ grovepi.pinMode(relay,"OUTPUT")
 
 
 def setRelay(input):
-        grovepi.digitalWrite(relay,input)
+	sendData.sendData(input)
+	grovepi.digitalWrite(relay,input)
+
 
 def getRelay():
-        grovepi.digitalRead(relay)
-
+	grovepi.digitalRead(relay)
