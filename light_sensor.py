@@ -1,3 +1,4 @@
+
 import time
 import grovepi
 
@@ -9,5 +10,4 @@ grovepi.pinMode(light_sensor,"INPUT")
 
 
 def light():
-        return  grovepi.analogRead(light_sensor)
-
+	return  grovepi.analogRead(light_sensor)

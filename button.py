@@ -10,4 +10,3 @@ grovepi.pinMode(button,"INPUT")
 
 def bouton():
        return grovepi.digitalRead(button)
-

@@ -1,3 +1,4 @@
+
 import time
 import grovepi
 # Connect the Grove Switch to digital port D3
@@ -11,9 +12,25 @@ relay = 4
 grovepi.pinMode(switch,"INPUT")
 grovepi.pinMode(relay,"OUTPUT")
 
-
 import datetime
+
+
+
 datetime.datetime.now()
 print(datetime.datetime.now())
 
 
+
+#while True:
+#    try:
+#        if grovepi.digitalRead(switch):
+#	grovepi.digitalWrite(relay,0)
+#	print("allumer ampoule")
+#        else:
+#            grovepi.digitalWrite(relay,0)
+#	time.sleep(.05)
+#    except KeyboardInterrupt:
+#        grovepi.digitalWrite(relay,0)
+#        break
+#    except IOError:
+#        print "Error"

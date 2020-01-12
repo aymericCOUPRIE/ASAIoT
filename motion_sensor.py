@@ -1,4 +1,3 @@
-
 import time
 import grovepi
 
@@ -11,4 +10,3 @@ grovepi.pinMode(pir_sensor,"INPUT")
 def motion_sensor():
         # Sense motion, usually human, within the target range
         return grovepi.digitalRead(pir_sensor)
-
